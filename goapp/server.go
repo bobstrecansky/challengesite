@@ -11,6 +11,7 @@ import (
 	_ "github.com/lib/pq"
 )
 
+// TODO - Link up the server struct with the HTTP handlers
 type server struct {
 	router *http.ServeMux
 	db     *sql.DB
@@ -36,7 +37,7 @@ func redisPingHandler(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintln(w, pong)
 }
 
-// These need to go to ENV variables, just putting them here for now
+// TODO : These need to go to ENV variables and be used in the connStr function below, just putting them here for now
 const (
 	host     = "postgres"
 	port     = "5432"

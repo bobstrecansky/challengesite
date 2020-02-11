@@ -7,8 +7,8 @@ Make sure you have docker-compose installed: [Installation Link](https://docs.do
 2.  Start the service: `docker-compose up`
 3.  Make a request to the service:
 
-HOSTNAME/ : root Handler
+`curl http://HOSTNAME/` : root Handler
 
-HOSTNAME/redisPing : ping the redis Docker container
+`curl http://HOSTNAME/redisPing` : ping the redis Docker container
 
-HOSTNAME/postgresPing : ping the postgres Docker container
+`curl http://HOSTNAME/postgresPing` : ping the postgres Docker container
